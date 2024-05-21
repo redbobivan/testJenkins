@@ -1,0 +1,8 @@
+Full Reload
+A full reload is performed when all the data sources are reloaded from scratch. This process ensures that the entire dataset is updated and includes any changes made to the source data. In our project, we use a full reload for the normal reload operations. This comprehensive approach is essential for maintaining data integrity and accuracy across all data sources. However, it is time-consuming, typically taking up to 15 minutes to complete.
+
+Partial Reload
+On the other hand, a partial reload is used to refresh specific parts of the data without reloading the entire dataset. This method is particularly useful when dealing with small, frequently updated datasets. In our project, we utilize partial reloads for scenarios involving changes to external Excel files. This targeted approach allows us to quickly update the necessary data segments, significantly reducing the reload time to about 1 minute.
+
+Summary
+In summary, full reloads are appropriate for ensuring a complete update of all data sources, albeit with a longer execution time. Partial reloads are ideal for quickly refreshing specific datasets, particularly when dealing with external file changes, offering a much faster alternative to full reloads. By strategically using both methods, we can maintain data accuracy while optimizing reload times.
